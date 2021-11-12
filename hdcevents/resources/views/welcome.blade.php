@@ -50,7 +50,7 @@
 
         @foreach($arrNomes as $nome)
             <a>{{ $loop->index }}</a>
-            <p>{{ $nome }},</p>
+            <p>{{ $nome }},,</p>
         @endforeach
 
         {{-- Espaço para códiog PHP puro--}}
