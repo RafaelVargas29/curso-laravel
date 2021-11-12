@@ -37,6 +37,26 @@
             <p>O nome é {{ $nome }}!</p>
             <p>E a sua idade é {{ $idade }}</p>
         @endif
+        
+        
+        @for($i = 0; $i < count($arr); $i++)
+            
+            <p>{{ $arr[$i] }} - {{$i}}</p>
+            @if($i == 2)
+                <p>O i é par!</p>
+            @endif
 
+        @endfor
+
+        @foreach($arrNomes as $nome)
+            <a>{{ $loop->index }}</a>
+            <p>{{ $nome }},</p>
+        @endforeach
+
+        {{-- Espaço para códiog PHP puro--}}
+        @php
+            $name = "Rafael Vargas";
+            echo "<p>$name</p>"
+        @endphp
     </body>
 </html>
