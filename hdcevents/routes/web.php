@@ -32,6 +32,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/product', function () {
-    return view('product');
+Route::get('/products', function () {
+    return view('products');
 });
